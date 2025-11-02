@@ -11,7 +11,7 @@ set -euo pipefail
 
 REQ_FILE=""
 DO_FREEZE=0
-WITH_SHAP=${WITH_SHAP:-0}
+WITH_SHAP=0
 
 die() { echo "❌ $*" >&2; exit 1; }
 has_cmd() { command -v "$1" >/dev/null 2>&1; }
